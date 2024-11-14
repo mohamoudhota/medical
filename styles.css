@@ -1,0 +1,93 @@
+/* تصميم الخلفية */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* تصميم العنوان الرئيسي */
+.main-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #0044cc;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.main-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* تصميم عناصر المستويات التدريبية */
+.levels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.level {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    width: 90%;
+    max-width: 500px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.level:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* تصميم النصوص الداخلية */
+h2, h3 {
+    color: #0044cc;
+}
+
+p {
+    color: #555;
+}
+
+/* تصميم الفوتر */
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    text-align: center;
+    color: #333;
+    font-size: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #ddd;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* تصميم النافذة المنبثقة */
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    color: #333;
+}

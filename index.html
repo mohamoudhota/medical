@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كورس التمريض المتكامل</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- العنوان الرئيسي في أعلى الصفحة -->
+    <header class="main-header">
+        <h1>أكاديمية المتميز</h1>
+        <p>تعلم أساسيات التمريض ومهاراته المتقدمة لتقديم الرعاية الصحية المتكاملة</p>
+    </header>
+
+    <!-- المحتوى الرئيسي للتطبيق -->
+    <main>
+        <section>
+            <h2>المستويات التدريبية</h2>
+            <div class="levels">
+                <div class="level" onclick="showLevel(1)">
+                    <h3>المستوى الأول: التمريض الأساسي</h3>
+                    <p>مقدمة في التمريض، القياسات الحيوية، الإسعافات الأولية، التغذية.</p>
+                </div>
+                <div class="level" onclick="showLevel(2)">
+                    <h3>المستوى الثاني: التمريض المتقدم</h3>
+                    <p>التعامل مع الألم، العناية بالجروح، الإدارة الدوائية، التوثيق الطبي.</p>
+                </div>
+                <div class="level" onclick="showLevel(3)">
+                    <h3>المستوى الثالث: التخصصات التمريضية</h3>
+                    <p>تمريض الطوارئ، تمريض الأطفال، التمريض النفسي، التدريب العملي.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="course-content" class="hidden">
+            <button onclick="goBack()">العودة</button>
+            <div id="content"></div>
+        </section>
+
+        <!-- نافذة منبثقة للمزيد من التفاصيل -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <div id="modal-details"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- قسم الصدقة الجارية في أسفل الصفحة -->
+    <footer>
+        <p>ساهم في <a href="https://example.com" target="_blank">الصدقة الجارية</a> لدعم المحتاجين وتعزيز الرعاية الصحية.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
